@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FutbolAula</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>⚽ FutbolAula</h1>
+    <p>Conoce a los jugadores de nuestro equipo</p>
+  </header>
+
+
+  <main>
+
+    <section class="bienvenida">
+      <p class="etiqueta">DESARROLLO DE SOFTWARE · AVANCE 1</p>
+
+      <h2>Un equipo, muchas historias</h2>
+
+      <p>
+        Explora nuestros jugadores y consulta su información deportiva.
+      </p>
+
+      <strong>3 jugadores · Equipo de práctica</strong>
+    </section>
+
+
+    <h2>Jugadores</h2>
+
+    <label for="busqueda">
+      Buscar por nombre o posición
+    </label>
+
+    <div class="buscador">
+
+      <input
+        id="busqueda"
+        type="search"
+        placeholder="Ejemplo: Camilo o portero"
+      >
+
+      <button id="limpiar" type="button">
+        Limpiar
+      </button>
+
+    </div>
+
+
+    <div class="jugadores">
+
+      <article
+        class="tarjeta"
+        data-nombre="Andrés Torres"
+        data-posicion="Portero"
+        data-numero="1"
+        data-edad="20"
+      >
+        <span class="numero">01</span>
+
+        <h3>Andrés Torres</h3>
+
+        <p>Portero · 20 años</p>
+
+        <button
+          type="button"
+          class="ver-perfil"
+          aria-label="Ver perfil de Andrés Torres"
+        >
+          Ver perfil
+        </button>
+      </article>
+
+
+      <article
+        class="tarjeta"
+        data-nombre="Camilo Rojas"
+        data-posicion="Defensa"
+        data-numero="4"
+        data-edad="22"
+      >
+        <span class="numero">04</span>
+
+        <h3>Camilo Rojas</h3>
+
+        <p>Defensa · 22 años</p>
+
+        <button
+          type="button"
+          class="ver-perfil"
+          aria-label="Ver perfil de Camilo Rojas"
+        >
+          Ver perfil
+        </button>
+      </article>
+
+
+      <article
+        class="tarjeta"
+        data-nombre="Mateo Díaz"
+        data-posicion="Delantero"
+        data-numero="9"
+        data-edad="19"
+      >
+        <span class="numero">09</span>
+
+        <h3>Mateo Díaz</h3>
+
+        <p>Delantero · 19 años</p>
+
+        <button
+          type="button"
+          class="ver-perfil"
+          aria-label="Ver perfil de Mateo Díaz"
+        >
+          Ver perfil
+        </button>
+      </article>
+
+    </div>
+
+
+    <p id="resultado" role="status">
+      Mostrando 3 jugadores.
+    </p>
+
+    <p class="nota">
+      Prototipo de interfaz con datos ficticios.
+      El registro de jugadores y la base de datos se agregarán
+      en una próxima etapa.
+    </p>
+
+  </main>
+
+
+  <dialog id="perfil" aria-labelledby="nombre-perfil">
+
+    <p class="etiqueta">
+      PERFIL DEL JUGADOR
+    </p>
+
+    <h2 id="nombre-perfil"></h2>
+
+    <p id="datos-perfil"></p>
+
+    <form method="dialog">
+      <button>Cerrar</button>
+    </form>
+
+  </dialog>
+
+
+  <footer>
+    FutbolAula · Proyecto académico
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
